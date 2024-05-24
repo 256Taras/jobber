@@ -44,5 +44,5 @@ jobs:
       - run: npm publish
         working-directory: ./build
         env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JOBBER_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Step 6: Publish the package. This runs 'npm publish' in the 'build' directory using the authentication token stored in GitHub secrets.
